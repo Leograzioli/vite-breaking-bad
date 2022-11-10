@@ -26,7 +26,8 @@ export default {
             </span>
         </div>
         <div class="row row-cols-2 row-cols-md-5 p-4">
-            <div v-for="item in store.characters " class="col d-flex justify-content-center g-3 text-white">
+            <div v-for="item in store.characters " :key="item.char_id"
+                class="col d-flex justify-content-center g-3 text-white">
                 <CardCharacter :character="item" />
             </div>
         </div>
