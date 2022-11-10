@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 .ms_card {
-    min-width: 220px;
+    min-width: 225px;
 }
 
 .ms_card-img {
