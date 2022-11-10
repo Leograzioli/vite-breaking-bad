@@ -1,1 +1,17 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+    background-color: #2e3a46;
+}
+
+img {
+    max-width: 100%;
+}
+
+.ms_bg-primary {
+    background-color: #2e3a46;
+}
+
+.ms_bg-secondary {
+    background-color: #212529;
+}

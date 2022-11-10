@@ -1,0 +1,37 @@
+<script>
+export default {
+    name: 'CardCharacter',
+    props: {
+        character: Object
+    }
+
+}
+</script>
+
+<template>
+    <div class="ms_card ms_bg-primary p-3  text-center">
+        <div class="ms_card-img">
+            <img :src="character.img" alt="">
+        </div>
+        <div class="ms_card-text">
+            <div class="name mb-2">
+                {{ character.name }}
+            </div>
+            <div class="category text-secondary">
+                {{ character.category }}
+            </div>
+
+            <div class="status text-secondary mb-5">
+                {{ character.status }}
+            </div>
+        </div>
+
+    </div>
+</template>
+
+<style lang="scss" scoped>
+.ms_card-img {
+    height: 250px;
+    overflow: hidden;
+}
+</style>
