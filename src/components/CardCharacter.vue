@@ -14,10 +14,10 @@ export default {
             <img :src="character.img" alt="">
         </div>
         <div class="ms_card-text">
-            <div class="name mb-2">
+            <div class="name my-2 fw-bold">
                 {{ character.name }}
             </div>
-            <div class="category text-secondary">
+            <div class="category text-secondary fs-5">
                 {{ character.category }}
             </div>
 
