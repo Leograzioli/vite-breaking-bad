@@ -30,6 +30,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.ms_card {
+    min-width: 220px;
+}
+
 .ms_card-img {
     height: 250px;
     overflow: hidden;
