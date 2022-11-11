@@ -21,7 +21,7 @@ export default {
                 {{ character.category }}
             </div>
 
-            <div class="status text-secondary mb-5">
+            <div class="status text-secondary mb-4">
                 {{ character.status }}
             </div>
         </div>
