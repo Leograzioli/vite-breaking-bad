@@ -5,15 +5,20 @@ export default {
 </script>
 
 <template>
-    <header class="ms_bg-primary">
-        <div class="container d-flex h-100 align-items-end">
-
+    <header class="ms_bg-primary p-3">
+        <div class="d-flex">
+            <img src="../assets/logo.png" alt="">
+            <h1 class="text-white ms-2">Breaking bad Api</h1>
         </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
 header {
-    height: 150px;
+    min-height: 120px;
+
+    img {
+        height: 50px;
+    }
 }
 </style>

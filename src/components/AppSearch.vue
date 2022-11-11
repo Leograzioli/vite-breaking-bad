@@ -13,7 +13,7 @@ export default {
 
 <template>
     <div class="container">
-        <select @change="$emit('changedOption')" v-model="store.selectedOption">
+        <select class="p-2 mb-3" @change="$emit('changedOption')" v-model="store.selectedOption">
             <option value="">select your serie</option>
             <option v-for="(item, index) in this.seriesArray" :key="index" :value="item">{{ item }}</option>
         </select>
