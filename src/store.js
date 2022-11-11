@@ -2,5 +2,6 @@ import { reactive } from "vue";
 
 export const store = reactive({
     characters: [],
-    loaded: false
+    loaded: false,
+    selectedOption: ''
 });
