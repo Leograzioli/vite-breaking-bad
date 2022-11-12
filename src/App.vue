@@ -15,11 +15,9 @@ export default {
     getCharacters() {
       this.store.loaded = false;
       let urlApi = `https://www.breakingbadapi.com/api/characters`;
-      const paramsUrl = {}
-      if (this.store.selectedOption === `Breaking Bad`) {
-        paramsUrl.category = "Breaking Bad"
-      } else if (this.store.selectedOption === `Better Call Saul`) {
-        paramsUrl.category = `Better Call Saul`
+      const paramsUrl = {
+        ...this.store.selectedOption === `Breaking Bad` && { category: "Breaking Bad" },
+        ...this.store.selectedOption === `Better Call Saul` && { category: `Better Call Saul` }
       }
 
       axios.get(urlApi, {
