@@ -17,7 +17,8 @@ export default {
       let urlApi = `https://www.breakingbadapi.com/api/characters`;
       const paramsUrl = {
         ...this.store.selectedOption === `Breaking Bad` && { category: "Breaking Bad" },
-        ...this.store.selectedOption === `Better Call Saul` && { category: `Better Call Saul` }
+        ...this.store.selectedOption === `Better Call Saul` && { category: `Better Call Saul` },
+        ...this.store.nameImput && { name: this.store.nameImput }
       }
 
       axios.get(urlApi, {

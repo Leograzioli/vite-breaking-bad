@@ -13,13 +13,21 @@ export default {
 
 <template>
     <div class="container">
-        <select class="p-2 mb-3" @change="$emit('changedOption')" v-model="store.selectedOption">
-            <option value="">select your serie</option>
-            <option v-for="(item, index) in this.seriesArray" :key="index" :value="item">{{ item }}</option>
+        <input @keyup.enter="$emit('changedOption')" type="text" placeholder="Search by name" v-model="store.nameImput">
+        <select class="p-1 mb-3 ms-2" @change="$emit('changedOption')" v-model="store.selectedOption">
+            <option value="">select serie</option>
+            <option v-for="(item, index) in seriesArray" :key="index" :value="item">{{ item }}</option>
         </select>
     </div>
 </template>
 
 <style lang="scss" scoped>
+input {
+    text-align: center;
+    padding: 0.4rem;
+}
 
+option {
+    text-align: center;
+}
 </style>
