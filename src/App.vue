@@ -24,7 +24,7 @@ export default {
       axios.get(urlApi, {
         params: paramsUrl
       }).then((resp) => {
-        this.store.characters = resp.data
+        this.store.characters = resp.data;
       }).catch(error => {
         console.log(error);
       }).finally(() => {
