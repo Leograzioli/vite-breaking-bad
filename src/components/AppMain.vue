@@ -19,7 +19,7 @@ export default {
     <main>
         <div class="container p-5 bg-white">
             <div class="row rwo-cols-12 ms_bg-secondary text-white p-3">
-                <div v-if="store.loaded === false ">
+                <div v-if="store.loaded">
                     Found {{ store.characters.length }} characters
                 </div>
                 <div class="d-flex" v-else>
