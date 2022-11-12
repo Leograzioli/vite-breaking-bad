@@ -24,6 +24,9 @@ export default {
         params: paramsUrl
       }).then((resp) => {
         this.store.characters = resp.data
+      }).catch(error => {
+        console.log(error);
+      }).finally(() => {
         this.store.loaded = true;
       })
     }
